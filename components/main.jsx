@@ -1,5 +1,11 @@
+import Timer from "./timer"
+import Tasks from './tasks'
+
 export default function main() {
 	return (
-		<div>main</div>
+		<main>
+			<Timer/>
+			<Tasks/>
+		</main>
 	)
 }
