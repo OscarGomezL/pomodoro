@@ -1,5 +1,11 @@
+import Header from "./header"
+import Main from "./main"
+
 export default function layout() {
 	return (
-		<div>layout</div>
+		<div>
+			<Header/>
+			<Main/>
+		</div>
 	)
 }
