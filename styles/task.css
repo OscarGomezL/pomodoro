@@ -9,7 +9,7 @@
 	cursor: pointer;
 	border-radius: 4px;
 	color: var(--red4);
-
+	font-family: 'Times New Roman', Times, serif;
 }
 .task_selected {
 	border-top-left-radius: 4px;

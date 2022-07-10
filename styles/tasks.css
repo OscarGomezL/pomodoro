@@ -4,6 +4,7 @@
 	background-color: var(--red2);
 	display: flex;
 	flex-wrap: wrap;
+	font-family: 'Times New Roman', Times, serif;
 	justify-content: center;
 }
 .tasks_title {
@@ -14,6 +15,7 @@
 	padding: 10px;
 	border-bottom: 3px solid var(--red3);
 	color: var(--red3);
+	font-family: 'Times New Roman', Times, serif;
 }
 .tasks_container {
 	margin-top: 10px;
@@ -33,6 +35,7 @@
 	cursor: pointer;
 	font-size: 1.3rem;
 	color: var(--red3);	
+	font-family: 'Times New Roman', Times, serif;	
 
 }
 .tasks_container_add-task:hover { 
@@ -46,6 +49,7 @@
 	text-align: center;
 	width: 90%;
 	padding: 10px;
+	font-family: 'Times New Roman', Times, serif;	
 	border-top: 3px solid var(--red3);
 	color: var(--red3);
 }

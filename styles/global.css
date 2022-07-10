@@ -1,0 +1,6 @@
+body {
+	overflow: hidden;
+}
+*, *::before, *::after {
+	font-family: 'Anton', serif;
+}
