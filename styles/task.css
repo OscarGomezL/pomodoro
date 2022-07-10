@@ -1,0 +1,22 @@
+.task {
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	height: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--red3);
+	cursor: pointer;
+	border-radius: 4px;
+	color: var(--red4);
+
+}
+.task_selected {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	width: 1%;
+	height: 100%;
+}
+.task_selected_selected {
+	background-color: black;
+}
