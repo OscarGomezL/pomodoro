@@ -1,0 +1,18 @@
+header {
+	height: 12vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: var(--red5);
+}
+header img {
+	margin-left: 2vw;
+	height: 90%;
+}
+.header_title {
+	font-size: 3rem;
+	color: var(--red3);
+	margin-left: 0.5vw;
+	user-select: none;
+}

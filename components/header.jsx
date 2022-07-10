@@ -1,5 +1,8 @@
 export default function Header() {
 	return (
-		<div>header</div>
+		<header>
+			<img src="/favicon.ico" alt="" />
+			<div className="header_title">Pomodoro</div>
+		</header>
 	)
 }
