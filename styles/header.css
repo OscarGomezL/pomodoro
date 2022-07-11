@@ -4,7 +4,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	background-color: var(--red5);
+	background-color: var(--red1);
 }
 header img {
 	margin-left: 2vw;
