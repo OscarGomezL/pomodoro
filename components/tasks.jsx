@@ -1,4 +1,5 @@
 import Task from "./task"
+import { add } from "../logic/swal"
 export default function tasks() {
 	let theTasks = [
 		{
@@ -14,7 +15,10 @@ export default function tasks() {
 			<div className="tasks_title">Tasks</div>
 			<div className="tasks_container">
 				{theTasks.map(el=> <Task name={el.name} notes={el.notes} status={el.status} done={el.done} mustDo={el.mustDo}/>)}
-				<div className="tasks_container_add-task">
+				<div 
+					className="tasks_container_add-task"
+					onClick={()=>add()}
+				>
 					Add Task
 				</div>
 			</div>
