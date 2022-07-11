@@ -7,6 +7,7 @@ import '../styles/main.css'
 import '../styles/timer.css'
 import '../styles/tasks.css'
 import '../styles/task.css'
+import '../styles/swal2.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

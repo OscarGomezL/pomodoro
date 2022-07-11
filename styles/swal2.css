@@ -1,0 +1,21 @@
+
+.swal2-input:focus {
+	box-shadow: none !important;
+	outline: 2px solid var(--red1) !important;
+	border: 2px solid var(--red1) !important ;
+}
+.swal2-input::placeholder {
+	color: var(--red1) !important;
+}
+.swal2-confirm {
+	font-size: 1.2rem !important;
+}
+.swal2-input {
+	color: var(--red1) !important;
+	border: 2px solid var(--red1) !important;
+}
+.swal2-default-outline:focus {
+	box-shadow: none !important;
+	border: 0px solid #321 !important;
+	outline: 4px solid var(--red1) !important;
+}
