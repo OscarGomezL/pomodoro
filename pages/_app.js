@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		setStore(createStore(allReducers, {log: JSON.parse(localStorage.getItem("User"))}))
 		if(!localStorage.getItem('User')) {
-			localStorage.setItem('User', JSON.stringify({tasks:[], colections:[]}))
+			localStorage.setItem('User', JSON.stringify({tasks:[], colections:[], currentTask: null}))
 		}
 	}, [])
 	if(store===undefined) return null 
