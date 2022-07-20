@@ -21,9 +21,9 @@ export default function tasks() {
 					<input id="login-swal-input-1" type="text" placeholder="What Are You Working On?" class="swal2-input" required="true"/>
 				</form>
 			`,
-			color:"var(--red2)",
+			color:"var(--red4)",
 			background: "var(--red3)",
-			confirmButtonColor: "var(--red2)",
+			confirmButtonColor: "var(--red4)",
 			preConfirm: function() {
 				return new Promise((res,rej) =>{
 					res({
@@ -34,7 +34,7 @@ export default function tasks() {
 		})
 		.then(s=>{
 			let user = JSON.parse(localStorage.getItem('User'))
-			user.tasks.push({name:s.value.name, notes: [], status:"", done: 0, mustDo:1})
+			user.tasks.push({name:s.value.name, status:"uncomplete", done: 0, mustDo:1})
 			localStorage.setItem('User', JSON.stringify(user))
 			dispatch(logger('PATCH', user))
 		})
@@ -45,7 +45,7 @@ export default function tasks() {
 		<div className="tasks">
 			<div className="tasks_title">Tasks</div>
 			<div className="tasks_container">
-				{tasks.map(el=> <Task name={el.name} notes={el.notes} status={el.status} done={el.done} mustDo={el.mustDo}/>)}
+				{tasks.map((el,index)=> <Task key={index} index={index} name={el.name} status={el.status} done={el.done} mustDo={el.mustDo}/>)}
 				<div 
 					className="tasks_container_add-task"
 					onClick={()=>add()}
