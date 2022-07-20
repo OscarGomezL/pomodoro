@@ -17,9 +17,14 @@ export const changeTaskName = (id) => {
 	let Swal2 = withReactContent(swalLibrary)
 	Swal2.fire(
 		{title: 'Change the name of this task',
-		color:"var(--red2)",
+		color:"var(--red4)",
 		background: "var(--red3)",
-		confirmButtonColor: "var(--red2)",
-		confirmButtonText: 'Delete'}
+		html: `
+			<form autocomplete="off">
+				<input id="login-swal-input-1" type="text" placeholder="Name for the Task" class="swal2-input" required="true"/>
+			</form>
+		`,
+		confirmButtonColor: "var(--red4)",
+		confirmButtonText: 'Change'}
 	)
 }
