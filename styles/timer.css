@@ -13,25 +13,51 @@
 }
 .timer_container_status {
 	width: 100%;
-	height: 10%;
+	height: 20%;
 	display: grid;
 	place-items: center;
 	font-size: 2.5rem;
 	color: var(--red3);
 }
+.timer_container_status div {
+	padding: 10px 20px;
+	user-select: none;
+	border: 4px solid var(--red3);
+	border-radius: 8px;
+	margin-top: 10px;
+	background-color: var(--red2);
+}
 .timer_container_timer {
 	width: 100%;
-	height: 70%;
+	height: 60%;
 	display: grid;
 	place-items: center;
 	font-size: 15rem;
 	color: var(--red3);
 }
-.timer_container_stop {
+.timer_container_timer div {
+	padding: 10px 20px;
+	user-select: none;
+	border: 4px solid var(--red3);
+	border-radius: 8px;
+	background-color: var(--red2);
+}
+.timer_container_toggler {
 	width: 100%;
 	height: 20%;
 	display: grid;
 	place-items: center;
 	font-size: 3rem;
 	color: var(--red3);
+}
+.timer_container_toggler div {
+	padding: 10px 20px;
+	user-select: none;
+	cursor: pointer;
+	border: 4px solid var(--red3);
+	border-radius: 8px;
+	background-color: var(--red2);
+}
+.timer_container_toggler div:hover {
+	background-color: var(--red4);
 }
